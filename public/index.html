@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - NC SchedulEase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/NC_LOGO.png" alt="NC Logo" class="logo">
+        <h1>Reset Your Password</h1>
+        <form id="resetForm">
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" required>
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+                <div class="error" id="confirmError"></div>
+            </div>
+            <div class="requirements">
+                <ul>
+                    <li>At least 8 characters long</li>
+                    <li>Contains at least one uppercase letter</li>
+                    <li>Contains at least one lowercase letter</li>
+                    <li>Contains at least one number</li>
+                    <li>Contains at least one special character</li>
+                </ul>
+            </div>
+            <button type="submit" id="resetButton">Reset Password</button>
+            <div class="success" id="successMessage">Password reset successful!</div>
+            <div class="error" id="generalError"></div>
+        </form>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
